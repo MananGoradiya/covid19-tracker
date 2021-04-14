@@ -1,0 +1,57 @@
+.navbar{
+    border:2px solid red;
+   display: block;
+    width: 100%;
+    position: static;;
+}
+body{
+
+    background-image:url('image.jpg');
+    border: 10px solid violet;
+    background-repeat:no-repeat;
+    height:fit-content;
+    
+    
+}
+
+li{
+    display: inline-block;
+    border: 3px solid blue;
+    margin-left: 5px;
+    font-family: 'Potta One', cursive;
+    
+
+}
+ul{
+    border:5px solid rgb(20, 17, 17);
+    display:block;
+    width:fit-content;
+    margin: auto;
+    font-family: 'Potta One', cursive;
+    
+   
+}
+#logo{
+    border: 3px solid red;
+    margin-left: 10px;
+    position:relative;
+}
+input{
+    display:block;
+    margin: 30px;
+    width:350px;
+    height: 25px;
+    border-radius: 10px;
+    
+}
+form{
+    background-color: black;
+ border: 5px solid blueviolet;
+display: block;
+width: fit-content;
+height: 100%;
+margin-left: 10%;
+margin-top: 10%;
+
+
+}

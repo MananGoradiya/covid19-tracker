@@ -1,0 +1,33 @@
+li{
+    display: inline-block;
+   
+    
+    color: red;
+}
+.btn{
+    background-color: rgb(221, 156, 35);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 5px;
+    padding:5px;
+    
+
+}
+a{
+    color:black;
+    font-size: large;
+    text-decoration: none;
+}
+.navbar{
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+img{
+    width:70px;
+    height:17px;
+    margin-left:250px;
+    
+   
+}

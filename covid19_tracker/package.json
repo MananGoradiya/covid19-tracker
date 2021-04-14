@@ -1,0 +1,15 @@
+{
+  "name": "covid19_tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "react-leaflet": "^3.1.0"
+  }
+}

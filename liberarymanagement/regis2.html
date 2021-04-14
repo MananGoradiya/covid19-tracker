@@ -1,0 +1,127 @@
+<html>
+<head><title></title>
+<link    rel="stylesheet"   href="regis2.css">
+</head>
+<body>
+<form>
+  <div class="imgcontainer">
+   
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required id="email">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required id="password">
+
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required id="confirm_password">
+
+    <button type="submit" id="submit">Sign Up</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDeSM0Jyj-vM1FwEdyD1vzzOI4iYvwumWw",
+    authDomain: "librarymanagement-7d319.firebaseapp.com",
+    projectId: "librarymanagement-7d319",
+    storageBucket: "librarymanagement-7d319.appspot.com",
+    messagingSenderId: "288635930397",
+    appId: "1:288635930397:web:e62d3d2eb3de96341643f4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+// ****************************************************** */
+console.log("manan");
+var emai=document.getElementById('email').value;
+var password=document.getElementById('password').value;
+
+
+
+
+
+function registeruser(e)
+{
+  e.preventDefault();
+    var email=document.getElementById('email').value;
+    var password=document.getElementById('password').value;
+    console.log("yess boss 2222");
+  
+    
+
+   firebase.auth().createUserWithEmailAndPassword(email, password)
+   .then((userCredential) => {
+     // Signed in 
+     var user = userCredential.user;
+
+     console.log(user);
+     // ...
+   })
+   .catch((error) => {
+     alert(error.code);
+     var errorCode = error.code;
+     var errorMessage = error.message;
+     // ..
+   });
+}
+
+
+window.onload=function(){
+    document.getElementById("submit").addEventListener("click",(e)=>{
+        e.preventDefault();
+        console.log("yess boss");
+    registeruser(e);
+    
+    
+});
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</script>
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+</body>
+
+</html>

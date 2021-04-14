@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Arvo', serif;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-image: url(images/01.jpg);
+  opacity: 0.85;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  position: relative;
+  color: white;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Krona One', sans-serif;
+}
+
+.record-heading {
+  font-family: 'Arvo', serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 100px;
+  margin: 0;
+}
+
+#data {
+  margin: auto 20px;
+}
+
+.form-label {
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+.btn-property {
+  margin-top: 30px;
+}
